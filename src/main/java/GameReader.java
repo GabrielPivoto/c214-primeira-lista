@@ -9,10 +9,13 @@ import java.util.List;
 
 public class GameReader {
 
+    List<Game> games = new ArrayList<>();
 
-    public List<Game> listarGames(){
+    public GameReader(){
+        listarGames();
+    }
 
-        List<Game> games = new ArrayList<>();
+    public void listarGames(){
 
         try {
             Reader reader = Files.newBufferedReader(Paths.get("vendas-games.csv"));
@@ -21,7 +24,31 @@ public class GameReader {
         }catch (IOException e){
             System.out.println("Deu ruim");
         }
-        return games;
+
+    }
+
+    public List<Game> listarPorPlataforma(String plataforma){
+
+        List<Game> gamesByPlatform = new ArrayList<>();
+
+        for(int i = 0; i < games.size(); i++)
+            if(games.get(i).getPlatform().equals(plataforma))
+                gamesByPlatform.add(games.get(i));
+
+        return gamesByPlatform;
+
+    }
+
+    public List<Game> listarPorPublisher(String publisher){
+
+        List<Game> gamesByPublisher = new ArrayList<>();
+
+        for(int i = 0; i < games.size(); i++)
+            if(games.get(i).getPlatform().equals(publisher))
+                gamesByPublisher.add(games.get(i));
+
+        return gamesByPublisher;
+
     }
 
 }

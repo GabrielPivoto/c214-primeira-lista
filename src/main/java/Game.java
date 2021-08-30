@@ -15,6 +15,7 @@ public class Game {
     private double other_sales;
     private double global_sales;
 
+    /*
     public Game(int rank, String name, String platform, int year, String genre, String publisher, double na_sales, double eu_sales, double jp_sales, double other_sales, double global_sales) {
         this.rank = rank;
         this.name = name;
@@ -28,6 +29,6 @@ public class Game {
         this.other_sales = other_sales;
         this.global_sales = global_sales;
     }
-
+    */
 
 }
