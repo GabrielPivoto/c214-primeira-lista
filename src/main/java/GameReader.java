@@ -44,7 +44,7 @@ public class GameReader {
         List<Game> gamesByPublisher = new ArrayList<>();
 
         for(int i = 0; i < games.size(); i++)
-            if(games.get(i).getPlatform().equals(publisher))
+            if(games.get(i).getPublisher().equals(publisher))
                 gamesByPublisher.add(games.get(i));
 
         return gamesByPublisher;
