@@ -7,6 +7,7 @@ public class Principal {
 
         Scanner sc = new Scanner(System.in);
         GameReader gr = new GameReader();
+        GeradorJson geradorJson = new GeradorJson();
 
         System.out.println("Qual plataforma deseja buscar?");
         String plataforma = sc.nextLine();
@@ -15,6 +16,9 @@ public class Principal {
 
         List<Game> gamesPlataforma = gr.listarPorPlataforma(plataforma);
         List<Game> gamesPublisher = gr.listarPorPublisher(publisher);
+
+        geradorJson.gerarJson(gamesPlataforma, "gamesPlataforma.json");
+        geradorJson.gerarJson(gamesPublisher, "gamesPublisher.json");
 
         System.out.println("Jogos da plataforma " + plataforma + ":");
         for(int i = 0; i < gamesPlataforma.size(); i++)
