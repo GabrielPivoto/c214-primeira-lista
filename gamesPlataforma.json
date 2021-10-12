@@ -1,0 +1,67 @@
+[
+  {
+    "rank": 34,
+    "name": "Call of Duty: Black Ops 3",
+    "platform": "PS4",
+    "year": 2015,
+    "genre": "Shooter",
+    "publisher": "Activision",
+    "na_sales": 5.77,
+    "eu_sales": 5.81,
+    "jp_sales": 0.35,
+    "other_sales": 2.31,
+    "global_sales": 14.24
+  },
+  {
+    "rank": 45,
+    "name": "Grand Theft Auto V",
+    "platform": "PS4",
+    "year": 2014,
+    "genre": "Action",
+    "publisher": "Take-Two Interactive",
+    "na_sales": 3.8,
+    "eu_sales": 5.81,
+    "jp_sales": 0.36,
+    "other_sales": 2.02,
+    "global_sales": 11.98
+  },
+  {
+    "rank": 78,
+    "name": "FIFA 16",
+    "platform": "PS4",
+    "year": 2015,
+    "genre": "Sports",
+    "publisher": "Electronic Arts",
+    "na_sales": 1.11,
+    "eu_sales": 6.06,
+    "jp_sales": 0.06,
+    "other_sales": 1.26,
+    "global_sales": 8.49
+  },
+  {
+    "rank": 93,
+    "name": "Star Wars Battlefront (2015)",
+    "platform": "PS4",
+    "year": 2015,
+    "genre": "Shooter",
+    "publisher": "Electronic Arts",
+    "na_sales": 2.93,
+    "eu_sales": 3.29,
+    "jp_sales": 0.22,
+    "other_sales": 1.23,
+    "global_sales": 7.67
+  },
+  {
+    "rank": 94,
+    "name": "Call of Duty: Advanced Warfare",
+    "platform": "PS4",
+    "year": 2014,
+    "genre": "Shooter",
+    "publisher": "Activision",
+    "na_sales": 2.8,
+    "eu_sales": 3.3,
+    "jp_sales": 0.14,
+    "other_sales": 1.37,
+    "global_sales": 7.6
+  }
+]
