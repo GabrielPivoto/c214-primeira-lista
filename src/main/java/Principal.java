@@ -17,8 +17,12 @@ public class Principal {
         List<Game> gamesPlataforma = gr.listarPorPlataforma(plataforma);
         List<Game> gamesPublisher = gr.listarPorPublisher(publisher);
 
-        geradorJson.gerarJson(gamesPlataforma, "gamesPlataforma.json");
-        geradorJson.gerarJson(gamesPublisher, "gamesPublisher.json");
+        System.out.println("Como deseja nomear o arquivo json dos jogos listados por plataforma?");
+        String arquivoPlataforma = sc.nextLine();
+        System.out.println("Como deseja nomear o arquivo json dos jogos listados por publisher?");
+        String arquivoPublisher = sc.nextLine();
+        geradorJson.gerarJson(gamesPlataforma, arquivoPlataforma);
+        geradorJson.gerarJson(gamesPublisher, arquivoPublisher);
 
         System.out.println("Jogos da plataforma " + plataforma + ":");
         for(int i = 0; i < gamesPlataforma.size(); i++)
