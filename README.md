@@ -1,5 +1,7 @@
 # Primeira Lista de C214 :video_game: 
 
+[![CI](https://github.com/GabrielPivoto/c214-primeira-lista/actions/workflows/main.yml/badge.svg)](https://github.com/GabrielPivoto/c214-primeira-lista/actions/workflows/main.yml)
+
 Este código lê um arquivo CSV e é capaz de listar jogos por plataforma e publisher, em seguida gerando um arquivo json. 
 
 ## Execução
