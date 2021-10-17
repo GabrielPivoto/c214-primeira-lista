@@ -1,7 +1,12 @@
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.List;
 
 public class TesteGameReader {
@@ -46,6 +51,12 @@ public class TesteGameReader {
         if(gamesPS4.get(0).getPublisher().equals("Sony Computer Entertainment"))
             flag = true;
         Assert.assertTrue(flag);
+    }
+
+    @Test
+    public void testaSeJsonFoiCriado(){
+        File tempFile = new File("gamesPlataforma.json");
+        Assert.assertTrue(tempFile.exists());
     }
 
 
